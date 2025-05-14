@@ -10,26 +10,26 @@ const settings = {
 };
 
 
-async function callPaymentIntentApi() {
+async function callPaymentIntentApi(args) {
     
     
     
 };
 
-async function generatePaymentIntentUrl() {
+async function generatePaymentIntentUrl(args) {
 
 
   
 };
 
 
-async function callCheckoutApi() {
+async function callCheckoutApi(args) {
     
     
     
 };
 
-async function generateCheckoutPaymentPageUrl() {
+async function generateCheckoutPaymentPageUrl(args) {
     
     
     
