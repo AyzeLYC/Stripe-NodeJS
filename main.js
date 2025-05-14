@@ -93,22 +93,22 @@ async function callCheckoutAPI(args) {
         
         var result;
         
-        if (args.ftu === "create" || args.ftu === 0) { // if arguments . Function To Use
+        if (args.ftu === "create" || args.ftu === 0) { // if arguments . Function To Use is equal to create or 0 then
             
             const StripeAPISession = await Stripe(settings.api_secret_key).checkout.sessions.create(args.session.datas);
             
         };
-        if (args.ftu === "update" || args.ftu === 1) {
+        if (args.ftu === "update" || args.ftu === 1) { // if arguments . Function To Use is equal to update or 1 then
             
             const StripeAPISession = await Stripe(settings.api_secret_key).checkout.sessions.update(args.session.datas);
             
         };
-        if (args.ftu === "cancel" || args.ftu === 2) {
+        if (args.ftu === "cancel" || args.ftu === 2) { // if arguments . Function To Use is equal to cancel or 2 then
             
             const StripeAPISession = await Stripe(settings.api_secret_key).checkout.sessions.cancel(args.session.datas);
             
         };
-        if (args.ftu === "retrieve" || args.ftu === 3) {
+        if (args.ftu === "retrieve" || args.ftu === 3) { // if arguments . Function To Use is equal to retrieve or 3 then
             
             const StripeAPISession = await Stripe(settings.api_secret_key).checkout.sessions.retrieve(args.session.datas);
             
