@@ -1,3 +1,12 @@
+// old NodeJS
+
+var stripe = require("stripe");
+
+
+
+
+// modern NodeJS
+
 // dependancies
 
 import Stripe from "stripe";
